@@ -9,16 +9,22 @@ D-Kafka is a super-easy-to-start dockerized Kafka cluster with Zookeeper for dev
 ```shell
 docker-compose up
 ```
-2. Navigate to [localhost:9092](http://localhost:9092)
+
+2. Start the Spring Boot project:
+```shell
+./gradlew bootRun
+```
+
+3. Navigate to [localhost:8080/api/healz/](https://localhost:8080/api/healz/)
 
 
 ## Commands
 
-- start the container:
+- start the Zookeeper/Kafka container:
 ```shell
 docker-compose up
 ```
-- stop the container:
+- stop the Zookeeper/Kafka container:
 ```shell
 docker-compose down
 ```
